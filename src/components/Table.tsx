@@ -1,4 +1,4 @@
-import { Employee } from "../App";
+import { Employee } from "../models/Employee";
 
 export interface TableProps {
     data: Employee[];
