@@ -1,37 +1,52 @@
-import "./App.css";
-import { Table } from "./components/Table";
-import { Employee } from "./models/Employee";
+import './App.css'
+import { Table } from './components/Table'
+import { Employee } from './models/Employee';
 
 function App() {
   const mockData: Employee[] = [
     {
-      id: "1",
-      firstName: "Tom",
-      surname: "Smith",
+      id: '5',
+      firstname: 'John',
+      lastname: 'Doe',
       salary: 5000,
-      status: "Holiday",
+      status: 'Na urlopie',
+      phonenumber: 908908908,
     },
     {
-      id: "2",
-      firstName: "Leny",
-      surname: "Mark",
-      salary: 6000,
-      status: "Work",
+      id: '2',
+      firstname: 'Jan',
+      lastname: 'Kowalskiego',
+      salary: 15000,
+      status: 'Na urlopie',
+      phonenumber: 123123123,
     },
     {
-      id: "3",
-      firstName: "Gary",
-      surname: "Oldman",
-      salary: 9500,
-      status: "Work",
+      id: '1',
+      firstname: 'Adam',
+      lastname: 'Nowak',
+      salary: 25000,
+      status: 'Na urlopie',
+      phonenumber: 345345345,
     },
-  ];
+    {
+      id: '3',
+      firstname: 'Adam',
+      lastname: 'Nowak',
+      salary: 25000,
+      status: 'Na urlopie',
+      phonenumber: 678678678,
+    },
+  ]
+
   return (
     <>
-      <h1>Employees</h1>
-      <Table data={mockData}></Table>
+      <main className='container'>
+        <h1 className='pt-4 pb-4'>Employees</h1>
+
+        <Table data={mockData}></Table>
+      </main>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
